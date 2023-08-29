@@ -1,0 +1,426 @@
+# Sigurd Rønningen Jenssen 2020/2021
+#
+# Resources
+#     Camera list links
+#         https://www.hribi.net/
+#         https://www.whatsupcams.com/
+#         https://www.nordicweather.net/liikenne.php?en                                Sweden/Finland
+#         http://www.lookr.com/no/lookout/1182187370-Longyearbyen#action-play-lifetime Longyearbyen
+#         http://radars.uit.no/sousy/                                                  Longyearbyen (Research station)
+#         http://hornsund.com/                                                         Polish Polar Station Hornsund at Svalbard (Norway)
+#         http://webcamstorageaus.com/                                                 Australian (private?) airport cameras
+#         http://airportwebcams.net                                                    Airport cameras from all around the globe
+#         https://liikennetilanne.tmfg.fi/?view=drivingConditionView                   A ton of finnish traffic cameras
+#         https://weathercam.digitraffic.fi                                            Also a ton of finnish traffic cameras (albeit without a map)
+#         http://www.webcamplaza.net/master_frame_fix.html?http://www.webcamplaza.net/continents/scandinavia.html Ton of scandinavian webcams
+#         http://webcam.svorka.net                                                     Collection of swedish or Norwegian cameras with big views
+
+^httpclient.timeout 6
+
+#/mnt/1000gb_hdd
+/mnt/4000gb_hdd/camarchiver
+
+##########
+# NORWAY #
+##########
+
+https://www.vegvesen.no/public/webkamera/kamera?id=413681
+jpg
+Storsjoen
+#20m
+1200
+
+http://nordaasen.no/static/img-live/cam1.jpg
+jpg
+Nannestad_Nordaasen_Skistadion_1
+#2m, not sure
+120
+
+http://nordaasen.no/static/img-live/cam4.jpg
+jpg
+Nannestad_Nordaasen_Skistadion_2
+#2m, not sure
+120
+
+# Changed to https (16-may-2021 15:50)
+https://217.17.223.226/livebilder/flam/flam15.jpg
+jpg
+Flam
+#5m
+300
+
+# Changed to https (16-may-2021 15:50)
+https://217.17.223.226/LiveBilder/Future/Fram-4K/Future_F.jpg
+jpg
+Fjord_Cruise_Naerooyfjord1
+#14m+30s
+870
+
+# Changed to https (16-may-2021 15:50)
+https://217.17.223.226/LiveBilder/Vision/Front4K/Vfront.jpg
+jpg
+Fjord_Cruise_Naerooyfjord2
+#10m
+600
+
+#http://217.17.223.226/livebilder/kjetil/aurland_web.jpg
+https://217.17.223.226/livebilder/kjetil/aurland_web.jpg
+jpg
+Aurland
+#5m
+300
+
+# was in the news, camping van crashed almost went over the bridge side
+https://www.vegvesen.no/public/webkamera/kamera?id=2418950
+jpg
+Haugesund__E134_Karmsund_bru_1
+# 10m, inconsistent
+600
+
+https://www.oslohavn.no/webcam/raadhusintranett.jpg
+jpg
+Oslo_Fra_raadhuset
+#5m
+300
+
+https://www.oslohavn.no/webcam/kavringen.jpg
+jpg
+Kavringen_fyr_Port_of_Oslo
+#5m
+300
+
+https://hornsund.igf.edu.pl/camera/cam1.jpg
+jpg
+Spitsbergen_HornsundFjord_station_1
+#5m, not sure
+300
+
+http://www.ftp-server.no/basecamp/isfjord/isfjordradio15min.jpg
+jpg
+Isjord_Radio_Spitsbergen
+#15m
+900
+
+http://158.39.149.180/jpg/image.jpg
+jpg
+Adventdalen
+# Actually updates every second
+15
+
+http://kho.unis.no/SD/pics/cam3.jpg
+jpg
+KHO_UNIS_3
+# 1 hour, not sure
+3600
+
+http://kho.unis.no/SD/pics/cam2.jpg
+jpg
+KHO_UNIS_2
+# 1 hour, not sure
+3600
+
+http://kho.unis.no/SD/pics/cam1.jpg
+jpg
+KHO_UNIS_1
+# 2 hours, not sure (maybe daily)
+7200
+
+http://www.svein-nordahl.com/02-gruvedalen.jpg
+jpg
+Longyearbyen_sentrum
+60
+
+# -- npolar cams start --
+
+https://trollcam.npolar.no/TrollWebCam1HD.jpg
+jpg
+Troll_WebCam1
+#1hr
+3600
+
+# for these the http file index updates every 5 minutes but the content itself does not change as often
+
+https://data.npolar.no/_file/zeppelin/camera/Latest/zeppPan-01.jpg
+jpg
+npolar_zeppelin_1
+# unknown, 30m
+1800
+
+https://data.npolar.no/_file/zeppelin/camera/Latest/zeppPan-02.jpg
+jpg
+npolar_zeppelin_2
+# unknown, 30m
+1800
+
+https://data.npolar.no/_file/zeppelin/camera/Latest/zeppPan-03.jpg
+jpg
+npolar_zeppelin_3
+# unknown, 30m
+1800
+
+https://data.npolar.no/_file/zeppelin/camera/Latest/zeppPan-04.jpg
+jpg
+npolar_zeppelin_4
+# unknown, 30m
+1800
+
+https://data.npolar.no/_file/zeppelin/camera/Latest/zeppCam2.jpg
+jpg
+npolar_zeppelin_separate_cam
+#10m
+600
+
+# -- npolar cams end --
+
+http://www.korshamn.no/cron-download/korshamn123.jpg
+jpg
+Korshamn_Lyngdal_Korshavn1
+60
+
+# closest to sweden near kongsvinger
+https://www.vegvesen.no/public/webkamera/kamera?id=559817
+jpg
+E16_Ooyermoen_near_sweden
+#2hrs
+7200
+
+https://www.vegvesen.no/public/webkamera/kamera?id=945029
+jpg
+E45_Aidejavri
+#unsure
+#1hr
+3600
+
+https://webcam.rosfjordcamping.no/webcam-camping.jpg
+jpg
+Rosfjord_Camping
+#10m
+600
+
+http://www.edbavd.no/mk/kamera1.jpg
+jpg
+Mandal_stadium
+#unsure, last pic was from 4 days ago so
+#like 3 hrs
+10000
+
+#https://backend.roundshot.com/cams/1
+#jpg
+#TESTING
+## trying 2m
+#120
+
+#############
+# AUSTRALIA #
+#############
+
+# Has been offline for a while, just keeping an eye on it till it gets back up
+https://webcams.qldtraffic.qld.gov.au/Metropolitan/mecure.jpg
+jpg
+Brisbane
+#30m
+1800
+
+https://webcams.qldtraffic.qld.gov.au/Metropolitan/gateway.jpg
+jpg
+Brisbane_Gateway_Bridge_North
+#1m2.5s
+62.5
+
+https://webcams.qldtraffic.qld.gov.au/Metropolitan/MRMETRO-1465.jpg
+jpg
+Brisbane_Murarrie_Gateway_Mwy_Lytton
+#1m3s
+#unsure
+63
+
+https://webcams.qldtraffic.qld.gov.au/Metropolitan/105156_Metropolitan-Lytton-Port-Brisbane-Mwy-South.jpg
+jpg
+Brisbane_Port_Mwy_Luke_St_South
+#1m3s
+63
+
+https://webcams.qldtraffic.qld.gov.au/Metropolitan/105157_Metropolitan-Lytton-Port-Brisbane-Mwy-North.jpg
+jpg
+Brisbane_Port_Mwy_Luke_St_North
+#1m3s
+63
+
+https://webcams.qldtraffic.qld.gov.au/Metropolitan/MRMETRO-1219.jpg
+jpg
+Brisbane_Gateway_Mwy_Kingsford_Smith_Dr
+#1m3s
+63
+
+https://webcams.qldtraffic.qld.gov.au/Metropolitan/Whinstanes_Gateway_Mwy_Nth.jpg
+jpg
+Brisbane_Whinstanes_Gateway_Mwy_Links_Ave_East
+#1m3s
+63
+
+https://webcams.qldtraffic.qld.gov.au/Metropolitan/Hendra_East_West_Art_Nth.jpg
+jpg
+Brisbane_Hendra_AirportDrive_East
+#1m5s
+65
+
+https://webcams.qldtraffic.qld.gov.au/Metropolitan/118696-2-Northbound_Nudgee_Rd_Exit_and_Ramp.jpg
+jpg
+Brisbane_Northbound_Nudgee_RdExitRamp
+#1m3s
+63
+
+https://webcams.qldtraffic.qld.gov.au/Metropolitan/MRMETRO-1214.jpg
+jpg
+Brisbane_Pacific_Motorway_Arrow_St
+#1m3s
+63
+
+https://webcams.qldtraffic.qld.gov.au/Metropolitan/Toowong_MtCootha_West.jpg
+jpg
+Brisbane_Toowong_Mt_Coot-tha_Miskin_St_West
+#1m3s
+63
+
+https://webcams.qldtraffic.qld.gov.au/Metropolitan/MRMETRO-1456.jpg
+jpg
+Brisbane_Enoggera_Samford_Wardell
+#1m3s
+63
+
+https://webcams.qldtraffic.qld.gov.au/Metropolitan/MRMETRO-1225.jpg
+jpg
+Brisbane_Old_Northern_Rd_Rogers_Pde
+#1m3s
+63
+
+https://webcams.qldtraffic.qld.gov.au/Metropolitan/Indooroopilly_Western_Fwy_Sth.jpg
+jpg
+Brisbane_Indooroopilly_Western_Fwy_Moggill_Rd_South
+#1m4s
+64
+
+https://webcams.qldtraffic.qld.gov.au/Metropolitan/MRMETRO-1224.jpg
+jpg
+Brisbane_Moggill_Rd_Kenmore_Rd
+#1m4s
+64
+
+https://webcams.qldtraffic.qld.gov.au/Metropolitan/MRMETRO-1226.jpg
+jpg
+Brisbane_Centenary_Hwy_Bridge_Brisbane_River
+#1m4s
+64
+
+#########
+# JAPAN #
+#########
+
+# completely dead (301 moved permanently)
+#https://www.rcc.co.jp/camera/images/sky-m.jpg
+#jpg
+#Japan_Hiroshima
+##unsure, tons of duplicates
+##its over 9000
+#9001
+
+http://www2.kiroro.co.jp/swfimage/news/livecam003-l.jpg
+jpg
+Japan_Kiroro
+# 4 hours
+14400
+
+http://www-cg.cis.iwate-u.ac.jp/live_cam/mtiwate.jpg
+jpg
+Japan_Mount_Iwate
+#30m, correct but inconsistent
+1800
+
+###########
+# DENMARK #
+###########
+
+http://www.herlev-vejret.dk/jpgwebcam.jpg
+jpg
+Denmark_Herlev
+# Seen under 1m
+# chose to archive every 5m, high quality JPG
+#5m
+60
+
+http://webcam.trafikken.dk/webcam/Kastrup_vest.jpg
+jpg
+Denmark_Copenhagen_Airport_Kastrup_West
+# Actually ~10s
+60
+
+http://webcam.trafikken.dk/webcam/Kastrup_oest.jpg
+jpg
+Denmark_Copenhagen_Airprot_Kastrup_East
+# Actually ~10s
+60
+
+http://webcam.trafikken.dk/webcam/glamsbjerg.jpg
+jpg
+Denmark_Glamsbjerg
+# Actually 7-8s
+24
+
+http://webcam.trafikken.dk/webcam/Fuglebjerg.jpg
+jpg
+Denmark_Fuglebjerg
+# Actually ~9s
+30
+
+http://webcam.trafikken.dk/webcam/Fjeldsted1.jpg
+jpg
+Denmark_Fjeldsted1_West
+# unsure
+# 1h
+# changed to 3 hours (16-may-2021 15:49)
+10800
+
+http://webcam.trafikken.dk/webcam/Fjeldsted2.jpg
+jpg
+Denmark_Fjeldsted1_East
+# Actually ~20s
+60
+
+# Out of order 29-july 00:30:20 2020
+http://webcam.trafikken.dk/webcam/Storegade.jpg
+jpg
+Denmark_Esbjerg_Storegade
+# 2h
+7200
+
+http://webcam.trafikken.dk/webcam/Christiansdal.jpg
+jpg
+Denmark_Christiansdal_Dalbro
+# Actually ~15s ?
+# 30s
+30
+
+http://webcam.trafikken.dk/webcam/Nibevej1.jpg
+jpg
+Denmark_Aalborg_Ny_Nibevej_N
+# Actually ~10s-15s
+# Actually really inconsistent (16-may-2021 15:49)
+60
+
+###########
+# FINLAND #
+###########
+
+# totally dead (16-may-2021 15:50)
+#http://213.28.111.11/record/current.jpg
+#jpg
+#Finland_levi_field
+## Actually updates 1s, just boring
+## 5m
+#300
+
+https://weathercam.digitraffic.fi/C0157200.jpg
+jpg
+Finland_traffic_C0157200
+# Unsure
+600
