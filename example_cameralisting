@@ -1,0 +1,28 @@
+# Default useragent: Camarchiver
+# Default timeout: 5
+
+# This is the global http settings, because it is above the directory path line
+# Timeout has to be in seconds (std::stoi)
+^httpclient.useragent Useragent goes here
+^httpclient.timeout 5
+
+# This is the folder all camera folders will be saved in
+# Same as ./example_folder
+example_folder
+
+# This is a custom useragent for this specific camera, because it isnt global and its above the URL of the camera
+^httpclient.useragent testing
+http://cameras.aeroclubedeblumenau.com.br:8081/image/jpeg.cgi
+jpg
+Frequently_updated_camera
+# 5 seconds
+5
+
+# You can also set a local http timeout for specific cameras
+^httpclient.timeout 10
+https://www.vegvesen.no/public/webkamera/kamera?id=297619
+jpg
+Slower_updated_camera
+# 1200 seconds (20 minutes)
+1200
+
